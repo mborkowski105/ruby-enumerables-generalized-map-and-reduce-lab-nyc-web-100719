@@ -10,7 +10,7 @@ def map(array)
 end
 
 def reduce(array, start = 0)
-  array.drop(3).each do |i|
+  array.drop(start).each do |i|
     a = yield(a)
     puts a
   end
