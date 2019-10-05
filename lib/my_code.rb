@@ -10,5 +10,5 @@ def map(array)
 end
 
 def reduce(array, start = 0)
-  return array.inject(start) { yield }
+  return array.inject(start) { yield(a) }
 end  
