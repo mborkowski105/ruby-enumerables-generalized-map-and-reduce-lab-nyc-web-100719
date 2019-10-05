@@ -9,6 +9,6 @@ def map(array)
   return new_array
 end
 
-
-def reduce()
+def reduce(array, start)
+  
 end  
