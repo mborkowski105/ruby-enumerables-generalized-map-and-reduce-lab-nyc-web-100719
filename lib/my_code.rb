@@ -14,7 +14,7 @@ def reduce(array, start = 0)
   index = 0
   array.drop(start).each do |element|
     unless index == 0
-      accumulator = block.call(accumulator, element)
+      accumulator = yield(accumulator, element)
     end
     index += 1
   end
