@@ -10,5 +10,5 @@ def map(array)
 end
 
 def reduce(array, start = 0)
-  puts yield
+  puts yield.to_s
 end  
