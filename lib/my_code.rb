@@ -10,5 +10,9 @@ def map(array)
 end
 
 def reduce(array, start = 0)
-  puts yield.to_s
+  new_array = []
+  
+  array.drop(start).each do |a|
+    new_array[0] = yield(a)
+  end
 end  
