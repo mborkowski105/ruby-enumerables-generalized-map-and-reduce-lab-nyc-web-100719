@@ -10,9 +10,11 @@ def map(array)
 end
 
 def reduce(array, start = 0)
-  new_array = []
+  result = array[0]
   
   array.drop(start).each do |a|
-    new_array[0] = yield(a)
+    result = yield(a)
   end
+  
+  return result
 end  
