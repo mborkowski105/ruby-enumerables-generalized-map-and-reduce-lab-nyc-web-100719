@@ -10,5 +10,5 @@ def map(array)
 end
 
 
-def reverse_each  
+def reduce()
 end  
