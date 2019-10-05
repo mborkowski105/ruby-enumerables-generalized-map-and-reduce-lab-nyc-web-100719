@@ -11,6 +11,7 @@ end
 
 def reduce(array, start = 0)
   result = array[0]
+  puts result
   
   array.drop(start).each do |a|
     result = yield(a)
